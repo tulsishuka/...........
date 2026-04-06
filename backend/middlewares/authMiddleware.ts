@@ -4,6 +4,12 @@ import jwt, { JwtPayload } from "jsonwebtoken";
 import asyncHandler from "./asyncHandler";
 import { User } from "../models/userModel";
 
+// import { IUser } from "../interfaces/user.interface";
+
+// export interface AuthRequest extends Request {
+//   user?: IUser;
+// }
+
 interface AuthRequest extends Request {
   user?: any;
 }
