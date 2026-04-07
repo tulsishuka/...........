@@ -5,7 +5,9 @@ import Home from "./components/Home";
 import Contact from "./components/Contact";
 import SignUp from "./components/SignUp";
 import Product from './components/Product';
-
+import Verify from './components/Verify';
+import Login from './components/Login';
+import Forgot from './components/Forgot';
 const App = () => {
   return (
     <>
@@ -15,10 +17,16 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/signup" element={<SignUp />} />
+        <Route path="/verify" element={<Verify />} />
+        <Route path="/product" element={<Product   />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/forgot" element={<Forgot />} />
+
       </Routes>
-      <Product/>
+    
     </>
   )
 }
 
 export default App
+
